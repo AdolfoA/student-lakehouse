@@ -1,0 +1,40 @@
+{
+  "name": "STUDENT-TEST Platform Workspace",
+
+ "image": "z2hx/lakehouse:1.0",
+
+  "remoteUser": "z2h",
+
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
+  },
+
+  "runArgs": [
+    "--privileged"
+  ],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "redhat.vscode-yaml",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "editor.formatOnSave": true
+  },
+
+  "forwardPorts": [8080, 6443, 8888],
+
+  "postCreateCommand": "echo 'Platform image cargada correctamente.'",
+  "postStartCommand": "bash /opt/scripts/script.sh"
+}
+
