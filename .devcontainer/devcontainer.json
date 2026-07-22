@@ -1,7 +1,7 @@
 {
   "name": "STUDENT-TEST Platform Workspace",
 
- "image": "z2hx/lakehouse:1.0",
+  "image": "z2hx/lakehouse:1.0",
 
   "remoteUser": "z2h",
 
@@ -22,7 +22,6 @@
     "vscode": {
       "extensions": [
         "ms-azuretools.vscode-docker",
-        "ms-kubernetes-tools.vscode-kubernetes-tools",
         "redhat.vscode-yaml",
         "ms-python.python",
         "ms-python.vscode-pylance"
@@ -37,7 +36,5 @@
 
   "forwardPorts": [8080, 6443, 8888],
 
-  "postCreateCommand": "echo 'Platform image cargada correctamente.'",
-  "postStartCommand": "bash /opt/scripts/script.sh"
+  "postCreateCommand": "echo 'Platform image cargada correctamente.'"
 }
-
