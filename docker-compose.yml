@@ -241,7 +241,7 @@ services:
   minio:
     container_name: "minio"
     restart: "always"
-    image: quay.io/minio/minio:RELEASE.2022-08-26T19-53-15Z
+    image: ghcr.io/goharbor/minio:RELEASE.2022-08-26T19-53-15Z
     env_file:
         - ./config/minio.env
     volumes:
