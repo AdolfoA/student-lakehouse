@@ -1,0 +1,10 @@
+# Entornos virtuales de Python
+venv/
+.venv/
+
+# Cachés y checkpoints
+__pycache__/
+.ipynb_checkpoints/
+
+# Datos grandes (descargar de NYC TLC: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+nivel-0/data/yellow_tripdata_*.csv
